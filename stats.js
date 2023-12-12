@@ -11,5 +11,15 @@ const mem = parseInt(freemem() /1024 /1024 )
 //criando a porcentagem
 const percents = parseInt((mem/total) * 100)
 
-console.log (mem,total,percents)
+
+
+const stats = {
+    free: `${mem} MB`,
+    total: `${total} MB`,
+    usage: `${percents}%`
+
+}
+console.log(" === PC STATS MEMORY ===")
+console.table(stats)
+
 
