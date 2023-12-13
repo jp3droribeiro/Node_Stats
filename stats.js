@@ -1,10 +1,10 @@
 
 const os = require('os')
 
-//
+//primeiro parametro é a funcao , e o segundo sao os milisegundos
 setInterval(() => {
 
-    const { frememe,totalmem } = os
+    const { freemem ,totalmem } = os
 
     
     const total = parseInt(totalmem() / 1024 / 1024)
@@ -23,7 +23,6 @@ setInterval(() => {
     console.clear()
     console.log(" === PC STATS MEMORY ===")
     console.table(stats)
-
 
 },1000) 
 
